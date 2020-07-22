@@ -1,6 +1,8 @@
 <template>
   <div>
-    <p v-if="error">{{ errorMsg }}</p>
+    <p v-if="error"
+      >{{ errorMsg }} <router-link to="/">Go to homepage</router-link>
+    </p>
     <div v-else>
       <p v-if="loading">Loading...</p>
       <ul v-else>
